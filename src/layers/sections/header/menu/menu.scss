@@ -42,17 +42,21 @@
             padding-bottom: 2px;
         }
 
+        &:active {
+            transition: none;
+        }
+
         &--white {
             --icon-color: white;
 
             &:hover {
                 color: rgba(white, 0.8);
+                --icon-color: yellow;
             }
 
             &,
             &:active {
                 color: white;
-                transition: none;
             }
         }
     }

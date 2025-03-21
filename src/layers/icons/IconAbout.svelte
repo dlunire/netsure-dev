@@ -31,5 +31,6 @@
 
     path {
         fill: var(--icon-color);
+        transition: 300ms ease;
     }
 </style>
