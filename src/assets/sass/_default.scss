@@ -3,6 +3,10 @@
 
 :root {
     background-color: color.adjust($color: $backcolor, $lightness: -20%);
+
+    font: {
+        family: "Roboto", sans-serif, arial;
+    }
 }
 
 * {

@@ -1,0 +1,59 @@
+@use "sass:color";
+@use "/src/assets/sass/vars" as *;
+
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+
+    font: {
+        size: 0.9rem;
+    }
+
+    &__item {
+        padding-left: 0;
+        right: calc(var(--diagonal) + 5px);
+
+        &--white {
+            color: white;
+
+            &:not(:first-of-type) {
+                border-left: 1px solid rgba(white, 0.2);
+            }
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        padding: 0 5px;
+        transition: 300ms ease;
+
+        display: flex;
+        align-items: center;
+        gap: 3px;
+
+        --icon-size: 15px;
+
+        --icon-height: var(--icon-size);
+        --icon-width: var(--icon-size);
+
+        svg {
+            padding-bottom: 2px;
+        }
+
+        &--white {
+            --icon-color: white;
+
+            &:hover {
+                color: rgba(white, 0.8);
+            }
+
+            &,
+            &:active {
+                color: white;
+                transition: none;
+            }
+        }
+    }
+}

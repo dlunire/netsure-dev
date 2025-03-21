@@ -14,7 +14,7 @@
             calc(100% - var(--diagonal)) 100%,
             var(--diagonal) 100%);
 
-    &__inner {
+    &__blackbar {
 
         background-color: black;
         height: 35px;
@@ -23,16 +23,52 @@
         max-width: $max-width;
         overflow: visible;
         clip-path: var(--clip-path);
+
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 0;
     }
 
     &__nav {
-        background-color: red;
-        height: 50px;
-        max-width: 900px;
-        clip-path: var(--clip-path);
         position: absolute;
         margin: 0 auto;
         left: 0;
         right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &--red {
+            background-color: red;
+            background-image: linear-gradient(-45deg, rgba(black, 0.3), transparent);
+            clip-path: var(--clip-path);
+            height: 50px;
+            max-width: 900px;
+
+        }
+    }
+
+    &__menu {
+        padding-right: calc(var(--diagonal) + 5px);
+
+        &--red {
+            color: white;
+        }
+    }
+
+    &__logo {
+        --icon-size: 100px;
+
+        --icon-width: var(--icon-size);
+        --icon-height: var(--icon-size);
+        --icon-color: white;
+
+        svg {
+            position: relative;
+            left: calc(var(--diagonal) + 10px);
+            top: 5px;
+        }
     }
 }
