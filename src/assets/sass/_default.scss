@@ -4,3 +4,20 @@
 :root {
     background-color: color.adjust($color: $backcolor, $lightness: -20%);
 }
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: red;
+
+    &::before,
+    &::after {
+        box-sizing: inherit;
+    }
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+}

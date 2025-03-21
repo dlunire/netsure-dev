@@ -1,0 +1,38 @@
+@use "sass:color";
+@use "../../../assets/sass/vars" as *;
+
+.header {
+    position: sticky;
+    top: 0;
+
+    min-height: 20px;
+    z-index: 1000;
+
+    --diagonal: 35px;
+    --clip-path: polygon(0 0,
+            100% 0,
+            calc(100% - var(--diagonal)) 100%,
+            var(--diagonal) 100%);
+
+    &__inner {
+
+        background-color: black;
+        height: 35px;
+        margin: 0 auto;
+        width: $width;
+        max-width: $max-width;
+        overflow: visible;
+        clip-path: var(--clip-path);
+    }
+
+    &__nav {
+        background-color: red;
+        height: 50px;
+        max-width: 900px;
+        clip-path: var(--clip-path);
+        position: absolute;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+    }
+}
