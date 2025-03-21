@@ -1,0 +1,6 @@
+@use "sass:color";
+@use "./vars" as *;
+
+:root {
+    background-color: color.adjust($color: $backcolor, $lightness: -20%);
+}
