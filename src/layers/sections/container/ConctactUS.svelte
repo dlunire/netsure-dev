@@ -2,6 +2,7 @@
     import IconContact from "../../icons/IconContact.svelte";
     import IconForm from "../../icons/IconForm.svelte";
     import IconInput from "../../icons/IconInput.svelte";
+    import Pattern from "../../icons/Pattern.svelte";
 </script>
 
 <section class="section section--contact-us" id="contact">
@@ -52,6 +53,8 @@
             </div>
         </article>
     </div>
+
+    <Pattern />
 </section>
 
 <style>
