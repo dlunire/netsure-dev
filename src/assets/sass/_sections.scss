@@ -47,11 +47,14 @@
     &__article {
         padding: 10px 0;
 
-        &--logo {
+        &--logo,
+        &--form {
             display: flex;
             align-items: center;
             justify-content: center;
+        }
 
+        &--logo {
             --icon-height: 110px;
 
             @media screen and (max-width: 750px) {

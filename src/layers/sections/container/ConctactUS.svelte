@@ -28,8 +28,16 @@
             </section>
         </article>
 
-        <article class="article section__article section__article--logo">
+        <article class="article section__article section__article--form">
             <div>
+                <p>Información de contacto</p>
+                <ul class="contact">
+                    <li class="contact__item"></li>
+
+                    <li class="contact__item"></li>
+
+                    <li class="contact__item"></li>
+                </ul>
                 <a
                     href="https://docs.google.com/forms/d/e/1FAIpQLSehRO-r5j8UWoiwYyLlqTEm1JmbmDfmDvQ1t6Q-Sb8rDM3Xsg/viewform?usp=header"
                     target="_blank"
