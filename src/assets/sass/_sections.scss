@@ -35,6 +35,14 @@
 
     &__article {
         padding: 10px 0;
+
+        &--logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            --icon-height: 110px;
+        }
     }
 }
 
