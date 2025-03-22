@@ -6,6 +6,7 @@
     import IconFlammable from "../../icons/IconFlammable.svelte";
     import IconToxic from "../../icons/IconToxic.svelte";
     import Logo from "../../icons/Logo.svelte";
+    import Logotipo from "../../icons/Logotipo.svelte";
     import Pattern from "../../icons/Pattern.svelte";
 </script>
 
@@ -60,7 +61,9 @@
             </section>
         </article>
 
-        <article class="section__article section__article--logo">dfads</article>
+        <article class="section__article section__article--logo">
+            <Logotipo />
+        </article>
     </div>
 
     <Pattern />

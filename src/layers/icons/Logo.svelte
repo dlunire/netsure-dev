@@ -31,8 +31,11 @@
 
 <style>
     svg {
-        width: var(--icon-width);
-        height: var(--icon-height);
+        max-width: var(--icon-width);
+        max-height: var(--icon-height);
+
+        width: 100%;
+        height: 100%;
     }
 
     path {
