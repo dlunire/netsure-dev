@@ -14,6 +14,16 @@
         background-color: white;
     }
 
+    &__articles {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+
+        @media screen and (max-width: 620px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
     &__inner {
         position: relative;
         margin: 0 auto;
@@ -63,7 +73,6 @@
         padding: 5px;
         border-radius: 5px 5px 0 0;
         color: red;
-        width: 200px;
         padding-right: 20px;
     }
 }
