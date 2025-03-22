@@ -39,7 +39,7 @@
 </script>
 
 {#if vertical}
-    <ul class="menu">
+    <ul class="menu menu--portrait">
         {#each menu as item}
             <li class="menu__item menu__item--vertical">
                 {#if item.icon}
@@ -51,7 +51,7 @@
         {/each}
     </ul>
 {:else}
-    <ul class="menu">
+    <ul class="menu menu--landscape">
         {#each menu as item}
             <li class="menu__item menu__item--white">
                 <a href={item.link} class="menu__link menu__link--white">

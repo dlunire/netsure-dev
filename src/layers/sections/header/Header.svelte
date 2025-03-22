@@ -49,6 +49,14 @@
     .open {
         border-radius: 2px;
 
+        &:hover {
+            background-color: rgba(white, 0.2);
+        }
+
+        &,
+        &:active {
+            background-color: transparent;
+        }
         span {
             width: 20px;
             --y: 46.7%;
