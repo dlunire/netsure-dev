@@ -1,7 +1,10 @@
 <script>
     import IconContact from "../../icons/IconContact.svelte";
+    import IconEmail from "../../icons/IconEmail.svelte";
     import IconForm from "../../icons/IconForm.svelte";
     import IconInput from "../../icons/IconInput.svelte";
+    import IconLocation from "../../icons/IconLocation.svelte";
+    import IconWhatsApp from "../../icons/IconWhatsApp.svelte";
     import Pattern from "../../icons/Pattern.svelte";
 </script>
 
@@ -31,13 +34,22 @@
 
         <article class="article section__article section__article--form">
             <div>
-                <p>Información de contacto</p>
+                <h2 class="article__title">Información de contacto</h2>
                 <ul class="contact">
-                    <li class="contact__item"></li>
+                    <li class="contact__item color color--whatsapp">
+                        <IconWhatsApp />
+                        <span>300 439 8344</span>
+                    </li>
 
-                    <li class="contact__item"></li>
+                    <li class="contact__item color color--email">
+                        <IconEmail />
+                        <span>norsire.2020@gmail.com</span>
+                    </li>
 
-                    <li class="contact__item"></li>
+                    <li class="contact__item">
+                        <IconLocation />
+                        <span>Calle 6n #12e 28-1 Urb. Los Acacios</span>
+                    </li>
                 </ul>
                 <a
                     href="https://docs.google.com/forms/d/e/1FAIpQLSehRO-r5j8UWoiwYyLlqTEm1JmbmDfmDvQ1t6Q-Sb8rDM3Xsg/viewform?usp=header"
