@@ -78,6 +78,9 @@
         margin-bottom: 15px;
 
         --icon-width: 30px;
+        --icon-color: black;
+
+        color: var(--icon-color);
     }
 
     &__subtitle {
@@ -183,6 +186,9 @@
     }
 
     &__title {
+        --icon-color: black;
+
+        color: var(--icon-color);
         margin-top: 0;
         margin-bottom: 10px;
         padding: 5px 0;

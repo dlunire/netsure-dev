@@ -11,7 +11,8 @@
     line-height: 1.5;
 }
 
-* {
+*,
+iframe {
     box-sizing: border-box;
     scroll-behavior: smooth;
     scrollbar-width: thin;

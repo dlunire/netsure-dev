@@ -68,12 +68,12 @@
 
 <style>
     svg {
-        width: var(--icon-width);
-        height: var(--icon-height);
+        width: var(--icon-width) !important;
+        height: var(--icon-height) !important;
     }
 
     path {
-        stroke: var(--icon-color);
+        stroke: var(--icon-color) !important;
         transition: 300ms ease;
     }
 </style>
