@@ -1,5 +1,6 @@
 <script>
     import IconContact from "../../icons/IconContact.svelte";
+    import IconInput from "../../icons/IconInput.svelte";
 </script>
 
 <section class="section section--contact-us" id="contact">
@@ -26,8 +27,8 @@
             </section>
         </article>
 
-        <article class="article section__article section__article__logo">
-            <section class="section__column">
+        <article class="article section__article section__article--logo">
+            <div>
                 <a
                     href="https://docs.google.com/forms/d/e/1FAIpQLSehRO-r5j8UWoiwYyLlqTEm1JmbmDfmDvQ1t6Q-Sb8rDM3Xsg/viewform?usp=header"
                     target="_blank"
@@ -35,9 +36,10 @@
                     aria-label="Enviar formulario"
                     class="button button--google-form"
                 >
+                    <IconInput />
                     <span>Contáctanos</span>
                 </a>
-            </section>
+            </div>
         </article>
     </div>
 </section>
