@@ -1,6 +1,11 @@
 <script>
+    import IconBio from "../../icons/IconBio.svelte";
     import IconColombia from "../../icons/IconColombia.svelte";
+    import IconCorrisive from "../../icons/IconCorrisive.svelte";
+    import IconExploit from "../../icons/IconExploit.svelte";
+    import IconFlammable from "../../icons/IconFlammable.svelte";
     import Logo from "../../icons/Logo.svelte";
+    import Pattern from "../../icons/Pattern.svelte";
 </script>
 
 <section class="section section--about" id="about">
@@ -20,6 +25,7 @@
 
                 <ul class="article__items">
                     <li class="article__item">
+                        <IconBio />
                         <span>Biológico e Infeccioso</span>
                     </li>
 
@@ -28,14 +34,17 @@
                     </li>
 
                     <li class="article__item">
+                        <IconCorrisive />
                         <span>Corrosividad</span>
                     </li>
 
                     <li class="article__item">
+                        <IconFlammable />
                         <span>Inflamabilidad</span>
                     </li>
 
                     <li class="article__item">
+                        <IconExploit />
                         <span>Explosividad</span>
                     </li>
                 </ul>
@@ -51,4 +60,6 @@
 
         <article class="section__article section__article--logo">dfads</article>
     </div>
+
+    <Pattern />
 </section>
