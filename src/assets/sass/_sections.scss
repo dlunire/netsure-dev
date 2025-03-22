@@ -166,6 +166,10 @@
             right: 0;
             top: 0;
             bottom: 0;
+
+            -moz-object-fit: cover;
+            -webkit-object-fit: cover;
+            object-fit: cover;
         }
     }
 
