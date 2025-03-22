@@ -28,7 +28,7 @@
             <article class="article article--services">
                 <header class="article__header">
                     <img
-                        src="./images/"
+                        src="./images/photos/recoleccion-segura.webp"
                         alt="Recolección Segura"
                         on:error={handleError}
                     />
@@ -48,7 +48,7 @@
             <article class="article article--services">
                 <header class="article__header">
                     <img
-                        src="./images/"
+                        src="./images/photos/disposicion-final.webp"
                         alt="Disposición Final"
                         on:error={handleError}
                     />
@@ -78,7 +78,7 @@
             <article class="article article--services">
                 <header class="article__header">
                     <img
-                        src="./images/"
+                        src="./images/photos/capacitacion.webp"
                         alt="Capacitacion"
                         on:error={handleError}
                     />
@@ -97,7 +97,11 @@
 
             <article class="article article--services">
                 <header class="article__header">
-                    <img src="./images/" alt="Euro 6" on:error={handleError} />
+                    <img
+                        src="./images/photos/euro-06.webp"
+                        alt="Euro 6"
+                        on:error={handleError}
+                    />
                 </header>
 
                 <section class="article__container">
