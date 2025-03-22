@@ -102,11 +102,21 @@
     }
 
     &--google-form {
+        display: flex;
         height: 40px;
         width: 140px;
-        background-color: $base-color;
+        padding: 0 80px;
 
         --icon-color: white;
-        --icon-height: 30px;
+        --icon-height: 25px;
+
+        &:hover {
+            background-color: color.adjust($color: $base-color, $lightness: 5%);
+        }
+
+        &,
+        &:active {
+            background-color: $base-color;
+        }
     }
 }
