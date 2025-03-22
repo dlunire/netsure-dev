@@ -1,5 +1,17 @@
-<script>
+<script lang="ts">
+  import { onMount } from "svelte";
   import Main from "./layers/pages/Main.svelte";
+  import MoveDots from "./layers/animations/MoveDots.svelte";
+
+  let hidden: boolean = false;
+
+  onMount(() => {
+    hidden = true;
+  });
 </script>
 
-<Main />
+{#if hidden}
+  <Main />
+{:else}
+  <MoveDots />
+{/if}
