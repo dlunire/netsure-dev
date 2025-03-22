@@ -1,0 +1,66 @@
+@use "sass:color";
+@use "./vars" as *;
+
+.section {
+    position: relative;
+    padding: 70px 0;
+
+    &:not(:first-of-type) {
+        border-top: 1px solid red;
+    }
+
+    &--about {
+        background-color: white;
+    }
+
+    &__inner {
+        position: relative;
+        margin: 0 auto;
+        width: $width;
+        max-width: $max-width;
+
+        &--columns {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 10px;
+
+            @media screen and (max-width: 750px) {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+
+    &__article {
+        padding: 10px 0;
+    }
+}
+
+.article {
+    position: relative;
+
+    &__section {
+        min-height: 50px;
+
+        &--map {
+            --icon-height: 130px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font: {
+                weight: bold;
+            }
+        }
+    }
+
+    &__logo {
+        --icon-width: 300px;
+        --icon-color: #{$base-color};
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
