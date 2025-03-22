@@ -6,12 +6,13 @@
   let hidden: boolean = false;
 
   onMount(() => {
-    hidden = true;
+    addEventListener("load", function () {
+      hidden = true;
+    });
   });
 </script>
 
 {#if hidden}
   <Main />
-{:else}
-  <MoveDots />
 {/if}
+<MoveDots bind:hidden />

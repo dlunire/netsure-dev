@@ -1,4 +1,8 @@
-<div class="loading">
+<script lang="ts">
+    export let hidden: boolean = false;
+</script>
+
+<div class="loading" class:hidden>
     <svg
         fill="hsl(228, 97%, 42%)"
         viewBox="0 0 24 24"
@@ -191,6 +195,15 @@
         align-items: center;
         justify-content: center;
         background-color: rgb(219, 219, 219);
+        transition: 300ms ease;
+
+        z-index: 100000;
+    }
+
+    .hidden {
+        opacity: 0;
+        pointer-events: none;
+        user-select: none;
     }
 
     circle {
