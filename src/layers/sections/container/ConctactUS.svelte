@@ -35,6 +35,7 @@
                     title="Enviar formulario"
                     aria-label="Enviar formulario"
                     class="button button--google-form"
+                    rel="nofollow"
                 >
                     <IconInput />
                     <span>Contáctanos</span>

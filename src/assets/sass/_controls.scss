@@ -100,4 +100,13 @@
             background-color: rgba($base-color, 0.8);
         }
     }
+
+    &--google-form {
+        height: 40px;
+        width: 140px;
+        background-color: $base-color;
+
+        --icon-color: white;
+        --icon-height: 30px;
+    }
 }
