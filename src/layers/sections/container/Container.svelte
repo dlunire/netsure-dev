@@ -2,6 +2,7 @@
     import Cover from "../banner/Cover.svelte";
     import About from "./About.svelte";
     import AboutUs from "./AboutUS.svelte";
+    import ConctactUs from "./ConctactUS.svelte";
     import Services from "./Services.svelte";
 </script>
 
@@ -10,4 +11,5 @@
     <About />
     <AboutUs />
     <Services />
+    <ConctactUs />
 </section>
