@@ -6,13 +6,15 @@
     import IconAbout from "../../../icons/IconAbout.svelte";
     import IconHome from "../../../icons/IconHome.svelte";
 
+    export let vertical: boolean = false;
+
     interface Menu {
         label: string;
         link: string;
         icon?: typeof SvelteComponent;
     }
 
-    let menu: Menu[] = [
+    export let menu: Menu[] = [
         {
             label: "HOME",
             link: "#home",
@@ -36,15 +38,29 @@
     ];
 </script>
 
-<ul class="menu">
-    {#each menu as item}
-        <li class="menu__item menu__item--white">
-            <a href={item.link} class="menu__link menu__link--white">
+{#if vertical}
+    <ul class="menu">
+        {#each menu as item}
+            <li class="menu__item menu__item--vertical">
                 {#if item.icon}
                     <svelte:component this={item.icon} />
                 {/if}
+
                 <span>{item.label}</span>
-            </a>
-        </li>
-    {/each}
-</ul>
+            </li>
+        {/each}
+    </ul>
+{:else}
+    <ul class="menu">
+        {#each menu as item}
+            <li class="menu__item menu__item--white">
+                <a href={item.link} class="menu__link menu__link--white">
+                    {#if item.icon}
+                        <svelte:component this={item.icon} />
+                    {/if}
+                    <span>{item.label}</span>
+                </a>
+            </li>
+        {/each}
+    </ul>
+{/if}
