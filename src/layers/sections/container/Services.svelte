@@ -32,14 +32,14 @@
                 </header>
 
                 <section class="article__container">
-                    <h3 class="article__title">Disposicion Final</h3>
+                    <h3 class="article__title">Disposición Final</h3>
                     <div class="article__content">
                         <p>
                             Convenios Comerciales para la disposición segura de
                             los residuos, con el <strong
                                 >Centro Inteligente de Gestión Ecológica
-                                Guayabal Licenciado</strong
-                            >, bajo resolución 0450 de 2006
+                                Guayabal</strong
+                            >, licenciado bajo resolución 0450 de 2006
                         </p>
 
                         <ul>
