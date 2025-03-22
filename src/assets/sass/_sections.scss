@@ -90,6 +90,11 @@
         padding: 10px 15px;
         border-radius: 5px 5px 0 0;
     }
+
+    &__services {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
 }
 
 .article {
