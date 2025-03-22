@@ -61,6 +61,24 @@ main {
 
         --icon-color: white;
     }
+
+    &__title {
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+
+        font: {
+            size: 2rem;
+            weight: 500;
+        }
+
+        span {
+
+            &:first-of-type {
+                color: #f06600;
+            }
+        }
+    }
 }
 
 .footer {

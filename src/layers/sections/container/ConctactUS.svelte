@@ -2,7 +2,6 @@
     import IconContact from "../../icons/IconContact.svelte";
     import IconEmail from "../../icons/IconEmail.svelte";
     import IconForm from "../../icons/IconForm.svelte";
-    import IconInput from "../../icons/IconInput.svelte";
     import IconLocation from "../../icons/IconLocation.svelte";
     import IconWhatsApp from "../../icons/IconWhatsApp.svelte";
     import Pattern from "../../icons/Pattern.svelte";
