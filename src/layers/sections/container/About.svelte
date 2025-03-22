@@ -4,6 +4,7 @@
     import IconCorrisive from "../../icons/IconCorrisive.svelte";
     import IconExploit from "../../icons/IconExploit.svelte";
     import IconFlammable from "../../icons/IconFlammable.svelte";
+    import IconToxic from "../../icons/IconToxic.svelte";
     import Logo from "../../icons/Logo.svelte";
     import Pattern from "../../icons/Pattern.svelte";
 </script>
@@ -30,6 +31,7 @@
                     </li>
 
                     <li class="article__item">
+                        <IconToxic />
                         <span>Toxicidad</span>
                     </li>
 
