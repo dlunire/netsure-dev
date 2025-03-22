@@ -41,3 +41,10 @@
         </article>
     </div>
 </section>
+
+<style>
+    iframe {
+        width: 100%;
+        margin: 0;
+    }
+</style>
