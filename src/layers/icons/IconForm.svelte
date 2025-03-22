@@ -33,3 +33,16 @@
         <rect x="0" y="0" width="36" height="36" fill-opacity="0"></rect>
     </g></svg
 >
+
+<style>
+    svg {
+        min-width: var(--icon-width);
+        min-height: var(--icon-width);
+        max-width: var(--icon-width);
+        max-height: var(--icon-width);
+    }
+
+    path {
+        fill: var(--icon-color);
+    }
+</style>

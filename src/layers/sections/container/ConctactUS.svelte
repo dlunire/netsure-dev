@@ -1,5 +1,6 @@
 <script>
     import IconContact from "../../icons/IconContact.svelte";
+    import IconForm from "../../icons/IconForm.svelte";
     import IconInput from "../../icons/IconInput.svelte";
 </script>
 
@@ -37,7 +38,7 @@
                     class="button button--google-form"
                     rel="nofollow"
                 >
-                    <IconInput />
+                    <IconForm />
                     <span>Contáctanos</span>
                 </a>
             </div>
