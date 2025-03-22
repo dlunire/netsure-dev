@@ -7,7 +7,7 @@
     overflow: hidden;
 
     &:not(:first-of-type) {
-        border-top: 1px solid red;
+        border-top: 1px solid rgba(red, 0.2);
     }
 
     &--about {
@@ -55,6 +55,13 @@
         gap: 5px;
 
         --icon-width: 30px;
+    }
+
+    &__subtitle {
+        border-bottom: 1px solid red;
+        padding-bottom: 5px;
+        color: red;
+        max-width: max-content
     }
 }
 
