@@ -1,5 +1,20 @@
-<script>
+<script lang="ts">
     import IconService from "../../icons/IconService.svelte";
+
+    /**
+     * Captura el error que se produce al momento de cargar
+     * @param event
+     */
+    function handleError(event: Event): void {
+        const { target: image } = event;
+
+        if (!(image instanceof HTMLImageElement)) {
+            return;
+        }
+
+        image.src = "./images/image.svg";
+        image.classList.add("image-error");
+    }
 </script>
 
 <section class="section section--services" id="services">
@@ -12,7 +27,11 @@
         <div class="section__services">
             <article class="article article--services">
                 <header class="article__header">
-                    <img src="./images/" alt="Foto" />
+                    <img
+                        src="./images/"
+                        alt="Recolección Segura"
+                        on:error={handleError}
+                    />
                 </header>
 
                 <section class="article__container">
@@ -28,7 +47,11 @@
 
             <article class="article article--services">
                 <header class="article__header">
-                    <img src="./images/" alt="Foto" />
+                    <img
+                        src="./images/"
+                        alt="Disposición Final"
+                        on:error={handleError}
+                    />
                 </header>
 
                 <section class="article__container">
@@ -54,7 +77,11 @@
 
             <article class="article article--services">
                 <header class="article__header">
-                    <img src="./images/" alt="Foto" />
+                    <img
+                        src="./images/"
+                        alt="Capacitacion"
+                        on:error={handleError}
+                    />
                 </header>
 
                 <section class="article__container">
@@ -70,7 +97,7 @@
 
             <article class="article article--services">
                 <header class="article__header">
-                    <img src="./images/" alt="Foto" />
+                    <img src="./images/" alt="Euro 6" on:error={handleError} />
                 </header>
 
                 <section class="article__container">

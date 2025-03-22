@@ -157,6 +157,7 @@
         background-color: rgba(black, 0.5);
         padding-top: 65%;
         border-radius: 5px 5px 0 0;
+        position: relative;
 
         img {
             display: block;
@@ -170,7 +171,11 @@
             -moz-object-fit: cover;
             -webkit-object-fit: cover;
             object-fit: cover;
+
+            width: 100%;
+            height: 100%;
         }
+
     }
 
     &__content {
@@ -184,4 +189,10 @@
 
         border-bottom: 1px solid rgba(black, 0.13);
     }
+}
+
+.image-error {
+    width: 130px !important;
+    height: 130px !important;
+    object-fit: scale-down !important
 }
