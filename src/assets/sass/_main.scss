@@ -18,6 +18,19 @@ main {
     display: block;
     position: relative;
 
+    &::before {
+        content: "";
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+
+        background-color: rgba(black, 0.85);
+        z-index: 1;
+    }
+
     &__image {
         display: block;
         position: absolute;
@@ -34,17 +47,19 @@ main {
         object-fit: cover;
     }
 
-    &::before {
-        content: "";
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         position: absolute;
         margin: auto;
         left: 0;
         right: 0;
         top: 0;
         bottom: 0;
-
-        background-color: rgba(black, 0.85);
         z-index: 1;
+
+        --icon-color: white;
     }
 }
 
