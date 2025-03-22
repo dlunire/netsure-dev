@@ -10,7 +10,7 @@
     import Pattern from "../../icons/Pattern.svelte";
 </script>
 
-<section class="section section--about" id="about">
+<section class="section section--about" id="about-1">
     <div class="section__inner section__inner--columns">
         <article class="article section__article section__article--left">
             <section class="article__section article__section--logo">
