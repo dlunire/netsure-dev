@@ -88,6 +88,16 @@
     }
 
     &--portfolio {
-        background-color: rgba($base-color, 0.8);
+        height: 40px;
+        min-width: 100px;
+
+        &:hover {
+            background-color: rgba($base-color, 1);
+        }
+
+        &,
+        &:active {
+            background-color: rgba($base-color, 0.8);
+        }
     }
 }
