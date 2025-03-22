@@ -94,6 +94,7 @@
     &__services {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
     }
 }
 
@@ -150,5 +151,10 @@
 
         --icon-width: var(--icon-size);
         --icon-height: var(--icon-size);
+    }
+
+    &__header {
+        background-color: rgba(black, 0.5);
+        padding-top: 60%;
     }
 }
