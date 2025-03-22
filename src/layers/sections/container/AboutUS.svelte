@@ -11,7 +11,7 @@
         </h2>
 
         <div class="section__articles">
-            <article class="section__article">
+            <article class="section__article section__article--item">
                 <h3 class="section__subtitle">¿Quiénes somos?</h3>
                 <p>
                     Somos una empresa que inició operaciones en el año 2020,
@@ -25,7 +25,7 @@
                 </p>
             </article>
 
-            <article class="section__article">
+            <article class="section__article section__article--item">
                 <h3 class="section__subtitle">Misión</h3>
                 <p>
                     Brindar servicios ambientales dentro y fuera del
@@ -37,7 +37,7 @@
                 </p>
             </article>
 
-            <article>
+            <article class="section__article section__article--item">
                 <h3 class="section__subtitle">Visión</h3>
                 <p>
                     Convertirnos en la empresa líder de nuestra región, con un
