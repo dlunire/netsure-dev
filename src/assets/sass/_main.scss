@@ -68,6 +68,8 @@ main {
         text-transform: uppercase;
         margin-top: 0;
         margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
         line-height: 1.1;
         width: $width;
 
@@ -78,18 +80,25 @@ main {
 
         @media screen and (max-width: 500px) {
             font: {
-                size: 0.9rem;
+                size: 1.3rem;
             }
         }
 
         span {
-            display: block;
+            display: flex;
+            justify-content: center;
+
             text-align: center;
             margin: 0 auto;
-            white-space: nowrap;
+            text-align: center;
+
+            @media screen and (min-width: 501px) {
+                white-space: nowrap;
+            }
 
             &:first-of-type {
                 color: #f06600;
+                margin-bottom: 10px;
             }
 
             &:last-of-type {
