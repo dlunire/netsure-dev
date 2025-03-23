@@ -13,7 +13,6 @@
         <div>
             <h1 class="banner__title">
                 <span class="color--orange">Consulte</span>
-                <br />
                 <span>Nuestro portafolio</span>
             </h1>
 
