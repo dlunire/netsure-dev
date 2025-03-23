@@ -77,6 +77,12 @@ main {
             &:first-of-type {
                 color: #f06600;
             }
+
+            &:last-of-type {
+                font: {
+                    size: 3rem;
+                }
+            }
         }
     }
 }

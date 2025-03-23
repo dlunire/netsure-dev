@@ -88,12 +88,14 @@
     }
 
     &--portfolio {
+        --icon-size: 30px;
+
         height: 60px;
         min-width: 100px;
+        max-width: 340px;
+
         display: flex;
         margin: 0 auto;
-
-        --icon-size: 30px;
 
         &:hover {
             background-color: rgba($base-color, 1);
