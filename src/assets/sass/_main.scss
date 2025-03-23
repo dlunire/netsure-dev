@@ -68,7 +68,7 @@ main {
         text-transform: uppercase;
 
         font: {
-            size: 2rem;
+            size: 1.5rem;
             weight: 500;
         }
 
@@ -81,6 +81,7 @@ main {
             &:last-of-type {
                 font: {
                     size: 3rem;
+                    family: "Roboto Condensed"
                 }
             }
         }
