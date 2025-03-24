@@ -41,6 +41,9 @@
         top: 0;
         bottom: 0;
 
+        transition: 300ms ease;
+        transition-delay: 400ms;
+
         span {
             display: block;
             position: absolute;
@@ -89,7 +92,6 @@
 
     &--open-menu {
         right: 20px;
-        transition-delay: 400ms;
     }
 
     &--portfolio {
