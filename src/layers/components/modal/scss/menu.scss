@@ -24,6 +24,7 @@
         overflow: auto;
         padding: 60px 0;
         animation: 200ms ease open-windows forwards;
+        backdrop-filter: blur(10px);
     }
 
     &__container {
