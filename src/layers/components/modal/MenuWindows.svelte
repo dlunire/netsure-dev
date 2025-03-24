@@ -26,7 +26,10 @@
         }
     }
 
-    function handle(event: MouseEvent): void {
+    /**
+     * Cierra el menú de navegación
+     */
+    function handle(): void {
         open = false;
     }
 
