@@ -1,5 +1,7 @@
 <script lang="ts">
     import type { Menu } from "../../../lib/interface/menu";
+    import IconFinalcial from "../../icons/IconFinalcial.svelte";
+    import IconForm from "../../icons/IconForm.svelte";
     import IconPortfolio from "../../icons/IconPortfolio.svelte";
     import "./scss/menu.scss";
     export let open: boolean = false;
@@ -88,7 +90,7 @@
                             target="_blank"
                             rel="nofollow"
                         >
-                            <IconPortfolio />
+                            <IconFinalcial />
                             <span>Formato de propuesta económica</span>
                         </a>
                     </li>
@@ -100,7 +102,7 @@
                             target="_blank"
                             rel="nofollow"
                         >
-                            <IconPortfolio />
+                            <IconForm />
                             <span>Formulario de contacto</span>
                         </a>
                     </li>
