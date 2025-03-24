@@ -87,6 +87,11 @@
         }
     }
 
+    &--open-menu {
+        right: 20px;
+        transition-delay: 400ms;
+    }
+
     &--portfolio {
         --icon-size: 30px;
 

@@ -79,6 +79,7 @@
 
 <button
     class="button button--menu"
+    class:button--open-menu={open}
     aria-label="menu"
     on:click={handle}
     class:open
