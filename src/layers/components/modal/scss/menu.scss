@@ -38,9 +38,20 @@
     &__title {
         color: $base-color;
         border-bottom: 1px solid rgba($base-color, 0.1);
+        background-color: rgba($base-color, 0.05);
+        padding: 5px 10px;
+        border-radius: 5px 5px 0 0;
+
+        &:first-of-type {
+            margin-top: 0;
+        }
+
+        &:not(:first-of-type) {
+            margin-top: 10px;
+        }
 
         font: {
-            size: 1.3rem;
+            size: 1.2rem;
         }
     }
 }
