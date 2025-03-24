@@ -40,6 +40,9 @@
     <div class="modal-container" bind:this={modal}>
         <section class="modal">
             <section class="modal__container">
+                <h2 class="modal__title">
+                    <span>Menú principal</span>
+                </h2>
                 <ul class="menu menu--horizontal">
                     {#each menu as item}
                         <li class="menu__item menu__item--horizontal">
@@ -59,6 +62,10 @@
                         </li>
                     {/each}
                 </ul>
+
+                <h2 class="modal__title">
+                    <span>Enlaces externos</span>
+                </h2>
             </section>
         </section>
     </div>

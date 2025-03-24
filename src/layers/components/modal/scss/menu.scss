@@ -34,6 +34,15 @@
     &__container {
         padding: 20px;
     }
+
+    &__title {
+        color: $base-color;
+        border-bottom: 1px solid rgba($base-color, 0.1);
+
+        font: {
+            size: 1.3rem;
+        }
+    }
 }
 
 @keyframes open-windows {
