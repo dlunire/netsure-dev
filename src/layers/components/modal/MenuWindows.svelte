@@ -12,9 +12,7 @@
      * @param element
      */
     function loadModal(element: HTMLElement | null): void {
-        if (open) {
-            document.body.setAttribute("style", "hidden");
-        }
+        document.body.removeAttribute("style");
 
         if (!(element instanceof HTMLElement)) {
             return;
@@ -22,7 +20,10 @@
 
         document.body.appendChild(element);
 
-        // document.body.removeAttribute("style");
+        if (open) {
+            document.body.setAttribute("style", "overflow: hidden");
+            return;
+        }
     }
 
     $: loadModal(modal);
