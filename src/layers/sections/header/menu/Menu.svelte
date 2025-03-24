@@ -5,14 +5,10 @@
     import IconService from "../../../icons/IconService.svelte";
     import IconAbout from "../../../icons/IconAbout.svelte";
     import IconHome from "../../../icons/IconHome.svelte";
+    import MenuWindows from "../../../components/modal/MenuWindows.svelte";
+    import type { Menu } from "../../../../lib/interface/menu";
 
     export let vertical: boolean = false;
-
-    interface Menu {
-        label: string;
-        link: string;
-        icon?: typeof SvelteComponent;
-    }
 
     export let menu: Menu[] = [
         {
@@ -36,6 +32,23 @@
             icon: IconContact as typeof SvelteComponent,
         },
     ];
+
+    let open: boolean = false;
+
+    /**
+     * Menu Button
+     *
+     * @param event Evento del Mouse
+     */
+    function handle(event: MouseEvent): void {
+        const { target: button } = event;
+
+        if (!(button instanceof HTMLButtonElement)) {
+            return;
+        }
+
+        open = !open;
+    }
 </script>
 
 {#if vertical}
@@ -64,3 +77,46 @@
         {/each}
     </ul>
 {/if}
+
+<button
+    class="button button--menu"
+    aria-label="menu"
+    on:click={handle}
+    class:open
+>
+    <span></span><span></span><span></span>
+</button>
+
+<MenuWindows bind:menu bind:open />
+
+<style lang="scss">
+    .open {
+        border-radius: 2px;
+
+        &:hover {
+            background-color: rgba(white, 0.2);
+        }
+
+        &,
+        &:active {
+            background-color: transparent;
+        }
+        span {
+            width: 20px;
+            --y: 46.7%;
+            &:first-of-type {
+                transform: rotate(45deg);
+                animation: 300ms ease open-menu-1 ease forwards;
+            }
+
+            &:nth-of-type(2) {
+                opacity: 0;
+            }
+
+            &:last-of-type {
+                transform: rotate(-45deg);
+                animation: 300ms ease open-menu-2 ease forwards;
+            }
+        }
+    }
+</style>

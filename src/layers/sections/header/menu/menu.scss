@@ -22,6 +22,13 @@
                 border-left: 1px solid rgba(white, 0.2);
             }
         }
+
+        &--horizontal {
+
+            &:not(:first-of-type) {
+                border-top: 1px solid rgba(white, 0.05);
+            }
+        }
     }
 
     &__link {
@@ -59,6 +66,14 @@
                 color: white;
             }
         }
+
+        &--horizontal {
+            --icon-color: white;
+
+            transition: 300ms ease;
+            color: var(--icon-color);
+            padding: 10px;
+        }
     }
 
     &--landscape {
@@ -66,5 +81,9 @@
         @media screen and (max-width: 650px) {
             display: none;
         }
+    }
+
+    &--horizontal {
+        flex-direction: column;
     }
 }
