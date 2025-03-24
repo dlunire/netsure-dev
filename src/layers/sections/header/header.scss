@@ -88,7 +88,9 @@
         &--open {
 
             svg {
-                left: 20px;
+                @media screen and (max-width: 650px) {
+                    left: 20px;
+                }
             }
         }
     }
