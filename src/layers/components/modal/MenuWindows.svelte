@@ -26,8 +26,11 @@
         }
     }
 
+    function handle(event: MouseEvent): void {
+        open = false;
+    }
+
     $: loadModal(modal);
-    $: console.log({ open });
 </script>
 
 {#if open}
@@ -41,6 +44,7 @@
                                 class="menu__link menu__link--horizontal"
                                 href={item.link}
                                 aria-label={item.label}
+                                on:click={handle}
                             >
                                 {#if item.icon}
                                     <svelte:component this={item.icon} />
