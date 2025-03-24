@@ -73,6 +73,22 @@
             transition: 300ms ease;
             color: var(--icon-color);
             padding: 10px;
+
+            &:hover {
+                background-color: rgba(#0080d4, 0.04);
+                transition: none;
+
+                --icon-color: rgb(119, 166, 255);
+            }
+
+            &,
+            &:active {
+                background-color: transparent;
+            }
+
+            &:active {
+                --icon-color: orange;
+            }
         }
     }
 
