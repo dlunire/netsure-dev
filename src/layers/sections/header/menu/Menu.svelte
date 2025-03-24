@@ -9,6 +9,7 @@
     import type { Menu } from "../../../../lib/interface/menu";
 
     export let vertical: boolean = false;
+    export let open: boolean = false;
 
     export let menu: Menu[] = [
         {
@@ -32,8 +33,6 @@
             icon: IconContact as typeof SvelteComponent,
         },
     ];
-
-    let open: boolean = false;
 
     /**
      * Menu Button

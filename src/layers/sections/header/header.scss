@@ -39,6 +39,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        transition: 300ms ease;
 
         &--red {
             background-color: red;
@@ -47,6 +48,10 @@
             height: 50px;
             max-width: 900px;
 
+        }
+
+        &--open {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)
         }
     }
 
