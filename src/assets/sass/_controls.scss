@@ -41,8 +41,8 @@
         top: 0;
         bottom: 0;
 
-        transition: 300ms ease;
-        transition-delay: 400ms;
+        transition: 300ms ease !important;
+        transition-delay: 400ms !important;
 
         span {
             display: block;
