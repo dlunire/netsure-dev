@@ -1,5 +1,6 @@
 <script lang="ts">
     import type { Menu } from "../../../lib/interface/menu";
+    import IconPortfolio from "../../icons/IconPortfolio.svelte";
     import "./scss/menu.scss";
     export let open: boolean = false;
     export let menu: Menu[] = [];
@@ -66,6 +67,44 @@
                 <h2 class="modal__title">
                     <span>Enlaces externos</span>
                 </h2>
+
+                <ul class="menu menu--horizontal">
+                    <li class="menu__item menu__item--horizontal">
+                        <a
+                            href="https://drive.google.com/file/d/18ovkKrJatJdvUdNifLplUBV2SsTjjcCV/view"
+                            class="menu__link menu__link--horizontal"
+                            target="_blank"
+                            rel="nofollow"
+                        >
+                            <IconPortfolio />
+                            <span>Portafolio</span>
+                        </a>
+                    </li>
+
+                    <li class="menu__item menu__item--horizontal">
+                        <a
+                            href="https://drive.google.com/file/d/1jLmSbZ3H8TutQbmLx67Wbue0r4Q5-H_H/view"
+                            class="menu__link menu__link--horizontal"
+                            target="_blank"
+                            rel="nofollow"
+                        >
+                            <IconPortfolio />
+                            <span>Formato de propuesta económica</span>
+                        </a>
+                    </li>
+
+                    <li class="menu__item menu__item--horizontal">
+                        <a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSd-E2T6CjR2leReUoF16Ku_klbpUykN2G0LJpG-iCnPkbP06w/viewform"
+                            class="menu__link menu__link--horizontal"
+                            target="_blank"
+                            rel="nofollow"
+                        >
+                            <IconPortfolio />
+                            <span>Formulario de contacto</span>
+                        </a>
+                    </li>
+                </ul>
             </section>
         </section>
     </div>
