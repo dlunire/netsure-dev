@@ -71,6 +71,14 @@
                 </li>
             </ul>
         </div>
+
+        <div class="footer__item">
+            <h2 class="footer__title">
+                <span>Redes Sociales</span>
+            </h2>
+
+            <ul class="footer__menu"></ul>
+        </div>
     </div>
 
     <div class="footer__author"></div>
