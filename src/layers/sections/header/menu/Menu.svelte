@@ -18,17 +18,17 @@
             icon: IconHome as typeof SvelteComponent,
         },
         {
-            label: "NOSOTROS",
+            label: "Nosotros",
             link: "#about",
             icon: IconAbout as typeof SvelteComponent,
         },
         {
-            label: "SERVICIOS",
+            label: "Servicios",
             link: "#services",
             icon: IconService as typeof SvelteComponent,
         },
         {
-            label: "CONTACTO",
+            label: "Contacto",
             link: "#contact",
             icon: IconContact as typeof SvelteComponent,
         },
@@ -48,6 +48,10 @@
 
         open = !open;
     }
+
+    function handleLink(): void {
+        open = false;
+    }
 </script>
 
 {#if vertical}
@@ -66,7 +70,11 @@
     <ul class="menu menu--landscape">
         {#each menu as item}
             <li class="menu__item menu__item--white">
-                <a href={item.link} class="menu__link menu__link--white">
+                <a
+                    href={item.link}
+                    class="menu__link menu__link--white"
+                    on:click={handleLink}
+                >
                     {#if item.icon}
                         <svelte:component this={item.icon} />
                     {/if}
