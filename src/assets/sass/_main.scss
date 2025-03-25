@@ -186,7 +186,7 @@ main {
         }
 
         & {
-            background-color: color.adjust($color: $base-color, $lightness: -30%);
+            background-color: color.adjust($color: $base-color, $lightness: -40%);
             border-bottom: 1px solid rgba($base-color, 0.2);
             padding: 10px;
             border-radius: 10px 10px 0 0;
