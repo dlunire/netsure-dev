@@ -33,6 +33,8 @@
             <h2 class="footer__title">
                 <span>Enlaces externos</span>
             </h2>
+
+            <ul class="footer__menu"></ul>
         </div>
     </div>
 
