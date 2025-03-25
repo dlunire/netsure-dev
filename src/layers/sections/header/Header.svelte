@@ -2,6 +2,9 @@
     import "./header.scss";
     import Logo from "../../icons/Logo.svelte";
     import Menu from "./menu/Menu.svelte";
+    import type { Menu as MenuItem } from "../../../lib/interface/menu";
+
+    export let menu: MenuItem[] = [];
 
     let open: boolean = false;
 </script>
@@ -14,7 +17,7 @@
             <Logo />
         </div>
         <div class="header__menu header__menu--red">
-            <Menu bind:open />
+            <Menu bind:open bind:menu />
         </div>
     </nav>
 </header>

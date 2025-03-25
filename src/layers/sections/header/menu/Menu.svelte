@@ -1,38 +1,12 @@
 <script lang="ts">
-    import type { SvelteComponent } from "svelte";
     import "./menu.scss";
-    import IconContact from "../../../icons/IconContact.svelte";
-    import IconService from "../../../icons/IconService.svelte";
-    import IconAbout from "../../../icons/IconAbout.svelte";
-    import IconHome from "../../../icons/IconHome.svelte";
     import MenuWindows from "../../../components/modal/MenuWindows.svelte";
     import type { Menu } from "../../../../lib/interface/menu";
 
     export let vertical: boolean = false;
     export let open: boolean = false;
 
-    export let menu: Menu[] = [
-        {
-            label: "HOME",
-            link: "#home",
-            icon: IconHome as typeof SvelteComponent,
-        },
-        {
-            label: "Nosotros",
-            link: "#about",
-            icon: IconAbout as typeof SvelteComponent,
-        },
-        {
-            label: "Servicios",
-            link: "#services",
-            icon: IconService as typeof SvelteComponent,
-        },
-        {
-            label: "Contacto",
-            link: "#contact",
-            icon: IconContact as typeof SvelteComponent,
-        },
-    ];
+    export let menu: Menu[] = [];
 
     /**
      * Menu Button

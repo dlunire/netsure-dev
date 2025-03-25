@@ -1,4 +1,5 @@
 <script lang="ts">
+    import type { Menu } from "../../../lib/interface/menu";
     import Cover from "../banner/Cover.svelte";
     import About from "./About.svelte";
     import AboutUs from "./AboutUS.svelte";
