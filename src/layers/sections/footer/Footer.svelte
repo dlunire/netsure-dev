@@ -1,7 +1,11 @@
 <script lang="ts">
     import type { Menu } from "../../../lib/interface/menu";
     import IconForm from "../../icons/IconForm.svelte";
+    import IconLInk from "../../icons/IconLInk.svelte";
+    import IconLocation from "../../icons/IconLocation.svelte";
+    import IconMenuItem from "../../icons/IconMenuItem.svelte";
     import IconPortfolio from "../../icons/IconPortfolio.svelte";
+    import IconSocialMedia from "../../icons/IconSocialMedia.svelte";
     export let menu: Menu[] = [];
 </script>
 
@@ -9,6 +13,7 @@
     <div class="footer__inner">
         <div class="footer__item">
             <h2 class="footer__title">
+                <IconMenuItem />
                 <span>Menú principal</span>
             </h2>
             <ul class="footer__menu">
@@ -33,6 +38,7 @@
 
         <div class="footer__item">
             <h2 class="footer__title">
+                <IconLInk />
                 <span>Enlaces externos</span>
             </h2>
 
@@ -74,6 +80,7 @@
 
         <div class="footer__item">
             <h2 class="footer__title">
+                <IconSocialMedia />
                 <span>Redes Sociales</span>
             </h2>
 

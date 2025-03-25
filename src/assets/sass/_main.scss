@@ -143,7 +143,7 @@ main {
         list-style: none;
         padding-left: 0;
         margin: 0;
-        background-color: rgba(#0080d4, 0.06);
+        background-color: rgba(#0080d4, 0.02);
 
         &-link {
             display: flex;
@@ -187,11 +187,11 @@ main {
 
         & {
             background-color: color.adjust($color: $base-color, $lightness: -44%);
-            border-bottom: 1px solid rgba($base-color, 0.2);
+            border-bottom: 1px solid rgba($base-color, 0.1);
             padding: 10px;
             border-radius: 10px 10px 0 0;
 
-            $border-color: rgba($base-color, 0.1);
+            $border-color: rgba($base-color, 0.05);
 
             border-left: 1px solid $border-color;
             border-right: 1px solid $border-color;
