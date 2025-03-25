@@ -6,7 +6,7 @@
     import IconMenuItem from "../../icons/IconMenuItem.svelte";
     import IconPortfolio from "../../icons/IconPortfolio.svelte";
     import IconSocialMedia from "../../icons/IconSocialMedia.svelte";
-    import Logotipo from "../../icons/Logotipo.svelte";
+    import Logo from "../../icons/Logo.svelte";
     export let menu: Menu[] = [];
 </script>
 
@@ -14,7 +14,7 @@
     <div class="footer__inner">
         <div class="footer__item">
             <div class="footer__logo">
-                <Logotipo />
+                <Logo />
             </div>
         </div>
         <div class="footer__item">
