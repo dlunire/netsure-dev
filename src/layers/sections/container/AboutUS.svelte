@@ -50,5 +50,5 @@
         </div>
     </div>
 
-    <Pattern />
+    <!-- <Pattern /> -->
 </section>

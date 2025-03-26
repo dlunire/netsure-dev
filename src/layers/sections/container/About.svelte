@@ -12,53 +12,57 @@
 
 <section class="section section--about" id="about-1">
     <div class="section__inner section__inner--columns">
-        <article class="article section__article section__article--left">
-            <section class="article__section article__section--logo">
-                <div class="article__logo">
-                    <Logo />
-                </div>
-            </section>
+        <article
+            class="article article--left section__article section__article--left"
+        >
+            <div>
+                <section class="article__section article__section--logo">
+                    <div class="article__logo">
+                        <Logo />
+                    </div>
+                </section>
 
-            <section class="article__section">
-                <p>
-                    Transporte, recolección y disposición final de residuos con
-                    características de peligrosidad.
-                </p>
+                <section class="article__section">
+                    <p>
+                        Transporte, recolección y disposición final de residuos
+                        con características de peligrosidad.
+                    </p>
 
-                <ul class="article__items">
-                    <li class="article__item">
-                        <IconBio />
-                        <span>Biológico e Infeccioso</span>
-                    </li>
+                    <ul class="article__items">
+                        <li class="article__item">
+                            <IconBio />
+                            <span>Biológico e Infeccioso</span>
+                        </li>
 
-                    <li class="article__item">
-                        <IconToxic />
-                        <span>Toxicidad</span>
-                    </li>
+                        <li class="article__item">
+                            <IconToxic />
+                            <span>Toxicidad</span>
+                        </li>
 
-                    <li class="article__item">
-                        <IconCorrisive />
-                        <span>Corrosividad</span>
-                    </li>
+                        <li class="article__item">
+                            <IconCorrisive />
+                            <span>Corrosividad</span>
+                        </li>
 
-                    <li class="article__item">
-                        <IconFlammable />
-                        <span>Inflamabilidad</span>
-                    </li>
+                        <li class="article__item">
+                            <IconFlammable />
+                            <span>Inflamabilidad</span>
+                        </li>
 
-                    <li class="article__item">
-                        <IconExploit />
-                        <span>Explosividad</span>
-                    </li>
-                </ul>
-            </section>
+                        <li class="article__item">
+                            <IconExploit />
+                            <span>Explosividad</span>
+                        </li>
+                    </ul>
+                </section>
 
-            <section class="article__section article__section--map">
-                <div>
-                    <IconColombia />
-                    <p>EMPRESA 100% NORTESANTANDEREANA</p>
-                </div>
-            </section>
+                <section class="article__section article__section--map">
+                    <div>
+                        <IconColombia />
+                        <p>EMPRESA 100% NORTESANTANDEREANA</p>
+                    </div>
+                </section>
+            </div>
         </article>
 
         <article class="section__article section__article--logo">
@@ -68,3 +72,15 @@
 
     <Pattern />
 </section>
+
+<style lang="scss">
+    .article {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &__item {
+            padding-left: 0;
+        }
+    }
+</style>
