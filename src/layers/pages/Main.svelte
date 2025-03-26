@@ -8,6 +8,7 @@
     import IconAbout from "../icons/IconAbout.svelte";
     import IconService from "../icons/IconService.svelte";
     import IconContact from "../icons/IconContact.svelte";
+    import WhatsAppModal from "../components/modal/WhatsAppModal.svelte";
 
     let menu: Menu[] = [
         {
@@ -37,4 +38,5 @@
     <Header bind:menu />
     <Container />
     <Footer bind:menu />
+    <WhatsAppModal />
 </main>
