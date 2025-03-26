@@ -3,6 +3,7 @@
     import IconAddress from "../../icons/IconAddress.svelte";
     import IconContact from "../../icons/IconContact.svelte";
     import IconEmail from "../../icons/IconEmail.svelte";
+    import IconFacebook from "../../icons/IconFacebook.svelte";
     import IconForm from "../../icons/IconForm.svelte";
     import IconInstagram from "../../icons/IconInstagram.svelte";
     import IconLInk from "../../icons/IconLInk.svelte";
@@ -121,10 +122,11 @@
                     <li class="footer__list footer__list--social-media">
                         <a
                             href="https://www.instagram.com/norsireesp"
-                            class="footer__list-link footer__list-link--socialmedia"
+                            class="footer__menu-link footer__menu-link--socialmedia"
                             aria-label="Instagram"
                             rel="nofollow"
                             target="_blank"
+                            data-social-media="instagram"
                         >
                             <IconInstagram />
                             <span>Instagram</span>
@@ -134,12 +136,13 @@
                     <li class="footer__list footer__list--social-media">
                         <a
                             href="https://web.facebook.com/profile.php?id=61572988453042"
-                            class="footer__list-link footer__list-link--socialmedia"
+                            class="footer__menu-link footer__menu-link--socialmedia"
                             aria-label="Instagram"
                             rel="nofollow"
                             target="_blank"
+                            data-social-media="facebook"
                         >
-                            <IconInstagram />
+                            <IconFacebook />
                             <span>Facebook</span>
                         </a>
                     </li>
