@@ -54,6 +54,7 @@
 
         deferredPrompt = null;
         showButton = false;
+        install.set({ height: 0, width: 0 });
     }
 
     /**
@@ -64,7 +65,6 @@
     function close(event: MouseEvent): void {
         localStorage.setItem("install", `{}`);
         showButton = false;
-
         install.set({ height: 0, width: 0 });
     }
 </script>
