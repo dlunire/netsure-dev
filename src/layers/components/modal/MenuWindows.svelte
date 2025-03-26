@@ -1,5 +1,8 @@
 <script lang="ts">
+    import { onDestroy } from "svelte";
     import type { Menu } from "../../../lib/interface/menu";
+    import type { Size } from "../../../lib/interface/size";
+    import { install } from "../../../lib/store";
     import IconFinalcial from "../../icons/IconFinalcial.svelte";
     import IconForm from "../../icons/IconForm.svelte";
     import IconPortfolio from "../../icons/IconPortfolio.svelte";
@@ -37,11 +40,21 @@
     }
 
     $: loadModal(modal);
+
+    let top: number = 0;
+
+    const unsubscribe = install.subscribe((size: Size) => {
+        top = size.height;
+    });
+
+    onDestroy(() => {
+        unsubscribe();
+    });
 </script>
 
 {#if open}
     <div class="modal-container" bind:this={modal}>
-        <section class="modal">
+        <section class="modal" style="--top: {top}px">
             <section class="modal__container">
                 <h2 class="modal__title">
                     <span>Menú principal</span>

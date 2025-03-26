@@ -19,6 +19,8 @@
     }
 
     & {
+        --top: 0px;
+
         display: flex;
         flex-direction: column;
         background-color: rgba(rgb(0, 7, 15), 0.9);
@@ -29,6 +31,8 @@
         padding: 60px 0;
         animation: 200ms ease open-windows forwards;
         backdrop-filter: blur(10px);
+
+        padding-top: calc(60px + var(--top));
     }
 
     &__container {
