@@ -2,11 +2,14 @@
 @use "../../../assets/sass/vars" as *;
 
 .header {
+    --top: 0;
+
     position: sticky;
-    top: 0;
+    top: var(--top);
 
     min-height: 20px;
     z-index: 1000;
+    transition: 300ms;
 
     --diagonal: 35px;
     --clip-path: polygon(0 0,

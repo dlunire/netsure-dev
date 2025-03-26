@@ -14,7 +14,7 @@
 </script>
 
 {#if hidden}
+  <InstallPrompt />
   <Main />
 {/if}
 <MoveDots bind:hidden />
-<InstallPrompt />
