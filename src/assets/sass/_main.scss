@@ -182,9 +182,10 @@ main {
                 transition: 300ms ease;
                 padding: 0;
                 justify-content: center;
+                border: 2px solid transparent;
 
                 &:hover {
-                    background-color: rgba(white, 0.8);
+                    border-color: var(--icon-color);
                 }
 
                 svg {
