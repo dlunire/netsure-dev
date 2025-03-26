@@ -95,7 +95,7 @@
         --icon-color: white;
 
         background-color: #021d1e;
-        padding: 5px 10px;
+        padding: 7px 10px;
         border-bottom: 2px solid rgb(202, 0, 0);
 
         &__inner {
