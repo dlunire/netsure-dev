@@ -1,6 +1,7 @@
 <script lang="ts">
     import type { Menu } from "../../../lib/interface/menu";
     import IconAddress from "../../icons/IconAddress.svelte";
+    import IconCodigosdelFuturo from "../../icons/IconCodigosdelFuturo.svelte";
     import IconContact from "../../icons/IconContact.svelte";
     import IconEmail from "../../icons/IconEmail.svelte";
     import IconFacebook from "../../icons/IconFacebook.svelte";
@@ -117,37 +118,46 @@
                 <span>Redes Sociales</span>
             </h2>
 
-            <div class="footer__author">
-                <ul class="footer__menu footer__menu--social-media">
-                    <li class="footer__list footer__list--social-media">
-                        <a
-                            href="https://www.instagram.com/norsireesp"
-                            class="footer__menu-link footer__menu-link--socialmedia"
-                            aria-label="Instagram"
-                            rel="nofollow"
-                            target="_blank"
-                            data-social-media="instagram"
-                        >
-                            <IconInstagram />
-                            <span>Instagram</span>
-                        </a>
-                    </li>
+            <ul class="footer__menu footer__menu--social-media">
+                <li class="footer__list footer__list--social-media">
+                    <a
+                        href="https://www.instagram.com/norsireesp"
+                        class="footer__menu-link footer__menu-link--socialmedia"
+                        aria-label="Instagram"
+                        rel="nofollow"
+                        target="_blank"
+                        data-social-media="instagram"
+                    >
+                        <IconInstagram />
+                        <span>Instagram</span>
+                    </a>
+                </li>
 
-                    <li class="footer__list footer__list--social-media">
-                        <a
-                            href="https://web.facebook.com/profile.php?id=61572988453042"
-                            class="footer__menu-link footer__menu-link--socialmedia"
-                            aria-label="Instagram"
-                            rel="nofollow"
-                            target="_blank"
-                            data-social-media="facebook"
-                        >
-                            <IconFacebook />
-                            <span>Facebook</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+                <li class="footer__list footer__list--social-media">
+                    <a
+                        href="https://web.facebook.com/profile.php?id=61572988453042"
+                        class="footer__menu-link footer__menu-link--socialmedia"
+                        aria-label="Instagram"
+                        rel="nofollow"
+                        target="_blank"
+                        data-social-media="facebook"
+                    >
+                        <IconFacebook />
+                        <span>Facebook</span>
+                    </a>
+                </li>
+            </ul>
         </div>
+    </div>
+    <div class="footer__author">
+        Desarrollado por
+        <a
+            href="https://dlunire.pro"
+            target="_blank"
+            aria-label="Códigos del Futuro"
+        >
+            <IconCodigosdelFuturo />
+            <span>Códigos del Futuro</span>
+        </a>
     </div>
 </footer>

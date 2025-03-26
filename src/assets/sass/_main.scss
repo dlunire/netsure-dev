@@ -112,7 +112,11 @@ main {
 }
 
 .footer {
-    padding: 10px 0;
+    padding-top: 10px;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+
     background-color: rgb(8, 6, 12);
     // background-image: linear-gradient(45deg, rgba(white, 0.04), transparent);
     color: white;
@@ -291,6 +295,43 @@ main {
         &:active {
             transition: none;
             opacity: 0.6;
+        }
+    }
+
+    &__author {
+        --icon-size: 10px;
+
+        --icon-width: var(--icon-size);
+        --icon-height: var(--icon-size);
+
+        height: 40px;
+        border-top: 1px solid rgba(white, 0.03);
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin: 0 auto;
+        width: $width;
+        max-width: $max-width;
+
+        font: {
+            size: 0.8rem;
+        }
+
+        a {
+            color: rgba(white, 0.7);
+            margin-left: 5px;
+            transition: 300ms ease;
+
+            &:hover {
+                color: white;
+            }
+
+            &:active {
+                transition: none;
+                color: rgba(white, 0.7);
+            }
         }
     }
 }
