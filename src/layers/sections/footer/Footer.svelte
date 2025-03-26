@@ -152,12 +152,12 @@
     <div class="footer__author">
         Desarrollado por
         <a
-            href="https://dlunire.pro"
+            href="https://github.com/dlunamontilla"
             target="_blank"
-            aria-label="Códigos del Futuro"
+            aria-label="David E Luna M"
         >
             <IconCodigosdelFuturo />
-            <span>Códigos del Futuro</span>
+            <span>David E Luna M</span>
         </a>
     </div>
 </footer>
