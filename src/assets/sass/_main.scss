@@ -113,8 +113,10 @@ main {
 
 .footer {
     padding: 10px 0;
-    background-color: black;
+    background-color: rgb(8, 6, 12);
+    // background-image: linear-gradient(45deg, rgba(white, 0.04), transparent);
     color: white;
+    border-top: 3px solid color.adjust($color: $base-color, $lightness: -20%);
 
     --icon-color: white;
     --icon-size: 14px;
@@ -133,8 +135,13 @@ main {
         grid-template-columns: repeat(4, 1fr);
         gap: 30px;
 
-        @media screen and (max-width: 650px) {
+        @media screen and (max-width: 700px) {
             grid-template-columns: 1fr;
+            width: unset;
+        }
+
+        @media screen and (min-width: 701px) and (max-width: 1024px) {
+            grid-template-columns: repeat(2, 1fr);
         }
     }
 
@@ -143,14 +150,12 @@ main {
         list-style: none;
         padding-left: 0;
         margin: 0;
-        background-color: rgba(#0080d4, 0.02);
 
         &-link {
             display: flex;
             align-items: center;
             padding: 10px;
             padding-left: 25px;
-            background-color: rgba($base-color, 0.03);
             gap: 6px;
 
             &:hover {
@@ -172,7 +177,17 @@ main {
         }
 
         &:not(:first-of-type) {
-            border-top: 1px solid rgba($base-color, 0.1);
+            border-top: 1px solid rgba(white, 0.03);
+        }
+
+        &--item {
+            &:not(:first-of-type) {
+                border: 0;
+            }
+
+            & {
+                padding: 7px 20px;
+            }
         }
     }
 
@@ -186,9 +201,8 @@ main {
         }
 
         & {
-            background-color: color.adjust($color: $base-color, $lightness: -44%);
-            border-bottom: 1px solid rgba($base-color, 0.1);
-            padding: 10px;
+            border-bottom: 1px solid rgba(white, 0.05);
+            padding: 10px 15px;
             border-radius: 10px 10px 0 0;
 
             $border-color: rgba($base-color, 0.05);
@@ -196,14 +210,33 @@ main {
             border-left: 1px solid $border-color;
             border-right: 1px solid $border-color;
             border-top: 1px solid $border-color;
+
+            @media screen and (max-width: 650px) {
+                background-color: color.adjust($color: $base-color, $lightness: -44%);
+            }
         }
     }
 
     &__logo {
         position: relative;
         height: 100px;
+        transition: 300ms ease;
+        opacity: 0.6;
 
-        --icon-width: 160px;
+        --icon-width: 200px;
         --icon-height: 100px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            opacity: 1;
+        }
+
+        &:active {
+            transition: none;
+            opacity: 0.6;
+        }
     }
 }

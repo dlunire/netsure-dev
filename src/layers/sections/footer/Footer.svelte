@@ -1,11 +1,15 @@
 <script lang="ts">
     import type { Menu } from "../../../lib/interface/menu";
+    import IconAddress from "../../icons/IconAddress.svelte";
+    import IconContact from "../../icons/IconContact.svelte";
+    import IconEmail from "../../icons/IconEmail.svelte";
     import IconForm from "../../icons/IconForm.svelte";
+    import IconInstagram from "../../icons/IconInstagram.svelte";
     import IconLInk from "../../icons/IconLInk.svelte";
-    import IconLocation from "../../icons/IconLocation.svelte";
     import IconMenuItem from "../../icons/IconMenuItem.svelte";
     import IconPortfolio from "../../icons/IconPortfolio.svelte";
     import IconSocialMedia from "../../icons/IconSocialMedia.svelte";
+    import IconWhatsApp from "../../icons/IconWhatsApp.svelte";
     import Logo from "../../icons/Logo.svelte";
     export let menu: Menu[] = [];
 </script>
@@ -13,9 +17,31 @@
 <footer class="footer">
     <div class="footer__inner">
         <div class="footer__item">
-            <div class="footer__logo">
+            <a href="#home" class="footer__logo">
                 <Logo />
-            </div>
+            </a>
+
+            <h2 class="footer__title">
+                <IconContact />
+                <span>Información de contacto</span>
+            </h2>
+
+            <ul class="footer__menu">
+                <li class="footer__list footer__list--item">
+                    <IconWhatsApp />
+                    <span>300 439 8344</span>
+                </li>
+
+                <li class="footer__list footer__list--item">
+                    <IconEmail />
+                    <span>norsire.2020@gmail.com</span>
+                </li>
+
+                <li class="footer__list footer__list--item">
+                    <IconAddress />
+                    <span>Calle 6n #12e 28-1 Urb. Los Acacios</span>
+                </li>
+            </ul>
         </div>
         <div class="footer__item">
             <h2 class="footer__title">
@@ -90,9 +116,35 @@
                 <span>Redes Sociales</span>
             </h2>
 
-            <ul class="footer__menu"></ul>
+            <div class="footer__author">
+                <ul class="footer__menu footer__menu--social-media">
+                    <li class="footer__list footer__list--social-media">
+                        <a
+                            href="https://www.instagram.com/norsireesp"
+                            class="footer__list-link footer__list-link--socialmedia"
+                            aria-label="Instagram"
+                            rel="nofollow"
+                            target="_blank"
+                        >
+                            <IconInstagram />
+                            <span>Instagram</span>
+                        </a>
+                    </li>
+
+                    <li class="footer__list footer__list--social-media">
+                        <a
+                            href="https://web.facebook.com/profile.php?id=61572988453042"
+                            class="footer__list-link footer__list-link--socialmedia"
+                            aria-label="Instagram"
+                            rel="nofollow"
+                            target="_blank"
+                        >
+                            <IconInstagram />
+                            <span>Facebook</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-
-    <div class="footer__author"></div>
 </footer>
