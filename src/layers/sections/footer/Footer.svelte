@@ -152,7 +152,7 @@
     <div class="footer__author">
         Desarrollado por
         <a
-            href="https://dlunire.pro"
+            href="https://dlunire.pro/"
             target="_blank"
             aria-label="Códigos del Futuro"
         >
